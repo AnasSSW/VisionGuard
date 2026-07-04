@@ -37,7 +37,7 @@ const menus = [
 
 function Sidebar() {
   return (
-    <aside className="w-64 bg-slate-900 text-white h-screen border-r border-slate-700">
+    <aside className="w-64 bg-neutral-800 text-white h-screen border-r border-slate-700">
 
       <div className="text-2xl font-bold p-6 border-b border-slate-700">
         Vision Guard
