@@ -38,10 +38,6 @@ function CameraCard({ name, status }) {
             {isOnline ? "Live Stream Ready" : "No Signal"}
           </p>
         </div>
-
-        <button className="rounded-lg bg-blue-600 px-3 py-2 text-sm font-medium text-white transition hover:bg-blue-700">
-          View
-        </button>
       </div>
     </div>
   );
