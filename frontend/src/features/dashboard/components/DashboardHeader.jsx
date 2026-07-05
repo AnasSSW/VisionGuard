@@ -2,7 +2,7 @@ function DashboardHeader() {
   return (
     <div className="mb-8 flex items-center justify-between">
       <div>
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-3xl font-bold text-gray-800 dark:text-white">
           Dashboard
         </h1>
 
@@ -12,7 +12,7 @@ function DashboardHeader() {
       </div>
 
       <div className="text-right">
-        <p className="font-semibold">
+        <p className="font-semibold text-gray-800 dark:text-white">
           Welcome
         </p>
 

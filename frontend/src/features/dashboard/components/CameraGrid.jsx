@@ -1,28 +1,31 @@
-import CameraCard from "./CameraCard";
+import { MdVideocam } from "react-icons/md";
 
-const cameras = [
-  { id: 1, name: "Camera 1", status: "Online" },
-  { id: 2, name: "Camera 2", status: "Online" },
-  { id: 3, name: "Camera 3", status: "Offline" },
-  { id: 4, name: "Camera 4", status: "Online" },
-];
+function CameraCard({ name, status }) {
+  const isOnline = status === "Online";
 
-function CameraGrid() {
   return (
-    <div className="rounded-xl bg-white p-6 shadow-md">
-      <h2 className="mb-4 text-xl font-bold">Live Cameras</h2>
+    <div className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-200 hover:shadow-lg dark:border-gray-700 dark:bg-gray-900">
+      {/* Camera Preview */}
+      <div className="flex h-40 items-center justify-center bg-gray-100 dark:bg-gray-700">
+        <MdVideocam size={60} className="text-gray-400 dark:text-gray-300" />
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {cameras.map((camera) => (
-          <CameraCard
-            key={camera.id}
-            name={camera.name}
-            status={camera.status}
-          />
-        ))}
+      {/* Camera Info */}
+      <div className="p-4">
+        <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+          {name}
+        </h3>
+
+        <span
+          className={`mt-3 inline-block rounded-full px-3 py-1 text-sm font-medium text-white ${
+            isOnline ? "bg-green-500" : "bg-red-500"
+          }`}
+        >
+          {status}
+        </span>
       </div>
     </div>
   );
 }
 
-export default CameraGrid;
+export default CameraCard;

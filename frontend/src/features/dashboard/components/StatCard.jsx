@@ -1,7 +1,7 @@
 function StatCard({ title, value, color }) {
   return (
-    <div className="rounded-2xl bg-white p-6 shadow-sm border">
-      <p className="text-sm font-medium text-gray-500">
+    <div className="rounded-2xl border bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+      <p className="text-sm font-medium text-gray-500 dark:text-gray-300">
         {title}
       </p>
 

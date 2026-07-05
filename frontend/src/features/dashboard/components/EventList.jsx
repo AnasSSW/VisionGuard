@@ -23,8 +23,8 @@ const events = [
 
 function EventList() {
   return (
-    <div className="rounded-xl bg-white p-6 shadow-md">
-      <h2 className="mb-4 text-xl font-bold">
+    <div className="rounded-xl border bg-white p-6 shadow-md dark:border-gray-700 dark:bg-gray-800">
+      <h2 className="mb-4 text-xl font-bold text-gray-800 dark:text-white">
         Recent Events
       </h2>
 
