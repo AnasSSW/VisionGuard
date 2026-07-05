@@ -1,11 +1,13 @@
 function StatCard({ title, value, color }) {
   return (
-    <div className="rounded-xl bg-white p-6 shadow-md">
-      <h3 className="text-gray-500 text-sm">{title}</h3>
-
-      <p className={`mt-3 text-4xl font-bold ${color}`}>
-        {value}
+    <div className="rounded-2xl bg-white p-6 shadow-sm border">
+      <p className="text-sm font-medium text-gray-500">
+        {title}
       </p>
+
+      <h2 className={`mt-3 text-5xl font-bold ${color}`}>
+        {value}
+      </h2>
     </div>
   );
 }

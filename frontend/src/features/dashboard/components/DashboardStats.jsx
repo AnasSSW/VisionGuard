@@ -2,7 +2,7 @@ import StatCard from "./StatCard";
 
 function DashboardStats() {
   return (
-    <div className="grid grid-cols-4 gap-6">
+    <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
 
       <StatCard
         title="Total Cameras"
